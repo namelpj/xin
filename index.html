@@ -1,0 +1,661 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>新能源指标</title>
+    <link rel="stylesheet" href="css/lpcom.css">
+    <link rel="stylesheet" href="css/personal.css">
+    <link rel="stylesheet" href="css/activityDelay.css">
+    <style>
+        /*.xin .xia{*/
+            /*margin-bottom: 0;*/
+        /*}*/
+        /*.xin .xia h4{*/
+            /*font-size: 1.6rem;*/
+            /*color: #5F5F5F;*/
+            /*text-align: center;*/
+            /*margin-bottom: 15px;*/
+        /*}*/
+        /*.xin .youhui{*/
+            /*width: 100%;*/
+            /*padding: 10px 30px 0 30px;*/
+        /*}*/
+        /*.xin .youhui img{*/
+            /*width: 100%;*/
+            /*height: auto;*/
+        /*}*/
+        /*.xin .footer_banner{*/
+            /*width: 100%;*/
+            /*height: auto;*/
+            /*position: relative;*/
+        /*}*/
+        /*.xin .footer_banner_main{*/
+            /*width: 100%;*/
+            /*height: auto;*/
+            /*background-color: #49b6f1;*/
+            /*position: relative;*/
+            /*padding: 60px 15px 30px 15px;*/
+        /*}*/
+        /*.xin .footer_banner .car{*/
+            /*position: absolute;*/
+            /*width: 100%;*/
+            /*height: auto;*/
+            /*padding: 25px 30%;*/
+            /*z-index: 100;*/
+        /*}*/
+        /*.xin .footer_banner .car img{*/
+            /*width: 100%;*/
+            /*height: auto;*/
+        /*}*/
+        /*.xin .footer_content{*/
+            /*border-radius: 5px;*/
+            /*-moz-border-radius: 5px;*/
+            /*-webkit-border-radius: 5px;*/
+            /*background-color: #fef9d9;*/
+            /*width: 100%;*/
+            /*height: auto;*/
+            /*padding: 15% 8px 5px 8px;*/
+        /*}*/
+        /*.xin .footer_content ul{*/
+            /*color: #3f3f3f;*/
+            /*font-size: 1.4rem;*/
+            /*padding: 15px 8px;*/
+            /*border-bottom: 1px dashed #ababab;*/
+        /*}*/
+        /*.xin .footer_content ul li{*/
+            /*line-height: 24px;*/
+        /*}*/
+        /*.xin .footer_content ul .frist_li{*/
+            /*margin-bottom: 12px;*/
+        /*}*/
+        /*.xin .footer_content .footer_content_item{*/
+            /*position: relative;*/
+        /*}*/
+        /*.xin .footer_content i{*/
+            /*position: absolute;*/
+            /*top:15px;*/
+            /*right:15px;*/
+            /*width: 45px;*/
+            /*height: 45px;*/
+        /*}*/
+        /*.xin .footer_content i.i1{*/
+            /*background: url("../images/didi_footer1.jpg") center center no-repeat;*/
+            /*background-size: contain;*/
+        /*}*/
+        /*.xin .tishi .tishi_main p{*/
+            /*font-size: 1.3rem;*/
+            /*color: #a5a5a5;*/
+            /*line-height: 24px;*/
+        /*}*/
+        /*.xin .tishi .tishi_main p span{*/
+            /*color: #49b6f1;*/
+        /*}*/
+        /*.xin .carMeg{*/
+            /*background-color: #fff;*/
+        /*}*/
+        /*.xin .choice{*/
+            /*padding:0px;*/
+        /*}*/
+        /*.xin .rexian{*/
+            /*width: 100%;*/
+            /*height: 35px;*/
+            /*position: fixed;*/
+            /*top:0px;*/
+            /*left: 0px;*/
+            /*z-index: 110;*/
+            /*background-color: #49b6f1;*/
+            /*color: #fff;*/
+        /*}*/
+        /*.xin .rexian a{*/
+            /*display: block;*/
+            /*width: 100%;*/
+            /*height: auto;*/
+            /*font-size: 1.6rem;*/
+            /*color: #fff;*/
+            /*line-height: 35px;*/
+        /*}*/
+        /*.xin .rexian a dl dt{*/
+            /*width: 20%;*/
+            /*float: left;*/
+        /*}*/
+        /*.xin .rexian a dl dt i{*/
+            /*display: inline-block;*/
+            /*width: 25px;*/
+            /*height: 25px;*/
+            /*background: url("../images/xin_tel.png") no-repeat;*/
+            /*background-size: contain;*/
+            /*-webkit-background-size: contain;*/
+            /*-moz-background-size: contain;*/
+            /*/!*vertical-align: middle;*!/*/
+            /*margin: 6px 20px 0 30px;*/
+        /*}*/
+        /*.xin .rexian a dl dd{*/
+            /*width: 80%;*/
+            /*float: left;*/
+        /*}*/
+        /*.xin .rexian a dl dd span{*/
+            /*display: inline-block;*/
+            /*color: #fff;*/
+        /*}*/
+        /*.xin .rexian a dl dd .fuwurexian{*/
+            /*width: 40%;*/
+            /*font-size: 1.8rem;*/
+            /*text-align: center;*/
+        /*}*/
+        /*.xin .rexian a dl dd .fuwuhaoma{*/
+            /*width: 60%;*/
+        /*}*/
+        /*.xin .logo_touming img{*/
+            /*width: 100%;*/
+            /*height: auto;*/
+        /*}*/
+        /*.xin .didi_foot .submit_button{*/
+            /*margin: 80px auto 10px auto;*/
+        /*}*/
+        /*.xin .didi_gongsijieshao{*/
+            /*padding: 10px 8px;*/
+        /*}*/
+        /*.xin .didi_gongsijieshao p{*/
+            /*font-size: 1.4rem;*/
+            /*color: #3f3f3f;*/
+            /*line-height: 20px;*/
+        /*}*/
+        /*.xin .didi_gongsijieshao p span{*/
+            /*color: #3fabf4;*/
+        /*}*/
+        /*.xin .didi_gongsijieshao .didi_gongsijieshao_logo{*/
+            /*width: 100%;*/
+            /*height: auto;*/
+            /*padding: 10px 10%;*/
+        /*}*/
+        /*.xin .didi_gongsijieshao .didi_gongsijieshao_logo img{*/
+            /*width: 100%;*/
+            /*height: auto;*/
+        /*}*/
+        /*.xin .zhibiao_type  p{*/
+            /*font-size: 1.3rem;*/
+            /*color: #5f5f5f;*/
+            /*float: left;*/
+            /*width: 80px;*/
+            /*height: 30px;*/
+        /*}*/
+        /*.xin .zhibiao_type dl{*/
+            /*float: left;*/
+            /*width: 50%;*/
+            /*margin-bottom: 0;*/
+        /*}*/
+        /*.xin .zhibiao_type dl dt{*/
+            /*width: 20px;*/
+            /*height: 20px;*/
+            /*float: left;*/
+            /*line-height: 20px;*/
+        /*}*/
+        /*.xin .zhibiao_type dt i{*/
+            /*display: inline-block;*/
+            /*background: url(../images/choice.jpg) no-repeat;*/
+            /*background-size: contain;*/
+            /*width: 20px;*/
+            /*height: 20px;*/
+            /*vertical-align: middle;*/
+        /*}*/
+        /*.xin .zhibiao_type dt i.choiced{*/
+            /*display: inline-block;*/
+            /*width: 20px;*/
+            /*height: 20px;*/
+            /*vertical-align: middle;*/
+            /*background: url("../images/choiced.jpg") no-repeat;*/
+            /*background-size: contain;*/
+        /*}*/
+        /*.xin .zhibiao_type dl dd{*/
+            /*margin-left: 30px;*/
+            /*height: 25px;*/
+            /*font-size: 1.3rem;*/
+            /*color: #5f5f5f ;*/
+            /*padding-top: 4px;*/
+        /*}*/
+        /*.xin .bm-top-zone{*/
+            /*padding-top:35px;*/
+        /*}*/
+        /*/!*办理流程样式 B*!/*/
+        /*.xin .xin_liucheng{*/
+            /*width: 100%;*/
+            /*height: auto;*/
+            /*margin-top: 20px;*/
+            /*padding: 0 15px 0 15px;*/
+        /*}*/
+        /*.xin .xin_liucheng h3{*/
+            /*font-size: 1.6rem;*/
+            /*color: #5F5F5F;*/
+            /*text-align: center;*/
+            /*margin-bottom: 12px;*/
+        /*}*/
+        /*.xin .xin_liucheng p{*/
+            /*font-size: 1.3rem;*/
+            /*color: #A6A6A6;*/
+            /*text-align: center;*/
+            /*padding: 0 15px;*/
+            /*margin-bottom: 20px;*/
+            /*line-height: 20px;*/
+        /*}*/
+        /*.xin .xin_liucheng img{*/
+            /*width: 100%;*/
+            /*height: auto;*/
+            /*padding-bottom:20px;*/
+            /*border-bottom: 1px dashed #D9D9D9;*/
+        /*}*/
+
+        /*/!*为什么选择斑马车务 B*!/*/
+
+        /*.xin .xin_xuanzhe{*/
+            /*padding: 30px 15px 0 15px;*/
+        /*}*/
+        /*.xin .xin_xuanzhe h3{*/
+            /*font-size: 1.6rem;*/
+            /*color: #5F5F5F;*/
+            /*text-align: center;*/
+            /*margin-bottom: 20px;*/
+        /*}*/
+        /*.xin .xin_xuanzhe dl{*/
+           /*width: 25%;*/
+            /*float: left;*/
+        /*}*/
+        /*.xin .xin_xuanzhe dl dt{*/
+           /*width: 100%;*/
+            /*display: block;*/
+        /*}*/
+        /*.xin .xin_xuanzhe dl dt i{*/
+            /*display:block;*/
+            /*width: 28px;*/
+            /*height: 34px;*/
+            /*background: url("../images/xin_icon.png")  no-repeat;*/
+            /*background-size: 320px 50px;*/
+            /*margin: 0 auto;*/
+            /*margin-bottom: 10px;*/
+        /*}*/
+        /*.xin .xin_xuanzhe dl dt i.i1{*/
+            /*background-position: -41px -11px ;*/
+        /*}*/
+        /*.xin .xin_xuanzhe dl dt i.i2{*/
+            /*background-position: -110px -11px ;*/
+        /*}*/
+        /*.xin .xin_xuanzhe dl dt i.i3{*/
+            /*background-position: -185px -11px ;*/
+        /*}*/
+        /*.xin .xin_xuanzhe dl dt i.i4{*/
+            /*width: 36px;*/
+            /*height: 34px;*/
+            /*background-position: -251px -11px ;*/
+        /*}*/
+        /*.xin .xin_xuanzhe dl dt span{*/
+            /*display: block;*/
+            /*width: 100%;*/
+            /*font-size: 1.5rem;*/
+            /*color: #5F5F5F;*/
+            /*text-align: center;*/
+            /*margin-bottom: 8px;*/
+        /*}*/
+        /*.xin .xin_xuanzhe dl dd p{*/
+            /*font-size: 1.3rem;*/
+            /*color: #A6A6A6;*/
+            /*padding: 0 3px;*/
+            /*line-height: 20px;*/
+        /*}*/
+        /*/!*为什么选择斑马车务 E*!/*/
+        /*/!*分享前 遮罩弹窗 B*!/*/
+        /*.xin .cover{*/
+            /*width: 100%;*/
+            /*height: 100%;*/
+            /*position: fixed;*/
+            /*bottom:0px;*/
+            /*background-color: rgba(0, 0, 0, 0.8);*/
+            /*padding: 60px 30px 0 30px ;*/
+            /*display: none;*/
+            /*z-index: 1000;*/
+        /*}*/
+        /*.xin .cover .fenxiang{*/
+            /*position: absolute;*/
+            /*top:30px;*/
+            /*right:25px;*/
+            /*width: 140px;*/
+            /*height: 125px;*/
+            /*background: url("../images/dd_share_div.png") no-repeat;*/
+            /*background-size: contain;*/
+        /*}*/
+
+        /*@media screen and (min-width: 540px){*/
+            /*.cover{*/
+                /*max-width: 540px;*/
+                /*bottom: 0;*/
+                /*left: 50%!important;*/
+                /*margin-left: -270px!important;*/
+            /*}*/
+            /*.rexian{*/
+                /*max-width: 540px;*/
+                /*left: 50%!important;*/
+                /*margin-left: -270px!important;*/
+            /*}*/
+        /*}*/
+        /*/!*分享前 遮罩弹窗 E*!/*/
+        /*/!*分享后的弹窗 B*!/*/
+        /*@media screen and (min-width: 541px){*/
+            /*.tanchuang{*/
+                /*max-width: 540px;*/
+                /*bottom: 0;*/
+                /*left: 50%!important;*/
+                /*margin-left: -270px!important;*/
+            /*}*/
+        /*}*/
+        /*.tanchuang{*/
+            /*position: fixed;*/
+            /*left: 0;*/
+            /*top: 0;*/
+            /*width: 100%;*/
+            /*height: 100%;*/
+            /*background-color: rgba(0,0,0,0.8);*/
+            /*z-index: 200;*/
+            /*padding: 60px 30px 0 30px ;*/
+            /*display: none;*/
+        /*}*/
+        /*.tanchuang .tanchuang_box{*/
+            /*position: relative;*/
+        /*}*/
+        /*.tanchuang .tanchuang_box img{*/
+            /*width: 100%;*/
+            /*height: auto;*/
+            /*margin-top: 50px;*/
+        /*}*/
+        /*.tanchuang .tanchuang_box span{*/
+            /*width: 16px;*/
+            /*height: 20px;*/
+            /*position: absolute;*/
+            /*top:8px;*/
+            /*right:8px;*/
+            /*background: url("../images/close.png") no-repeat;*/
+            /*background-size: contain;*/
+            /*-moz-background-size: contain;*/
+            /*-webkit-background-size: contain;*/
+        /*}*/
+        /*.tanchuang .tanchuang_box .tanchuang_button{*/
+            /*padding: 0 80px;*/
+        /*}*/
+        /*.tanchuang .tanchuang_box .tanchuang_button a{*/
+            /*display: block;*/
+            /*margin-top: 20px;*/
+        /*}*/
+        /*.tanchuang .tanchuang_box .tanchuang_button a .youhui_button{*/
+            /*width: 100%;*/
+            /*height: auto;*/
+            /*margin: 0;*/
+        /*}*/
+        /*分享后的弹窗 E*/
+    </style>
+</head>
+<body>
+<form method="post" action="" class="nianjianben">
+
+    <div class="xin">
+        <!-- 最新的服务热线 替换处 B-->
+        <div class="rexian">
+            <a href="tel:4008033576">
+                <dl class="clearfix">
+                    <dt><i></i></dt>
+                    <dd><span class="fuwurexian">服务热线</span><span class="fuwuhaoma">400-803-3576</span></dd>
+                </dl>
+            </a>
+        </div>
+        <!-- 最新的服务热线 替换处 E-->
+
+        <!-- 这里替换图片名 top_banner2.jpg -->
+        <div class="bm-top-zone">
+            <img src="../images/xin_topbanner.jpg" alt="" />
+        </div>
+
+
+        <!-- 为什么选择斑马车务 B-->
+        <div class="xin_xuanzhe clearfix">
+            <h3>为什么选择斑马车务延期指标？</h3>
+            <dl>
+                <dt>
+                    <i class="i1"></i>
+                    <span>专业</span>
+                </dt>
+                <dd>
+                    <p>全国最大、最专业的车务平台，是瓜子、优信、滴滴出行的车务服务商</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <i class="i2"></i>
+                    <span>便捷</span>
+                </dt>
+                <dd>
+                    <p>车管所驻场办公，全程代办服务，无需指标人到现场，业内速度最快。</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <i class="i3"></i>
+                    <span>安全</span>
+                </dt>
+                <dd>
+                    <p>公司自有车辆，及时上牌过户，不会对指标有任何影响</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <i class="i4"></i>
+                    <span>退款</span>
+                </dt>
+                <dd>
+                    <p>付款后没有办理之前，可以随时可以申请退费，当天退款！</p>
+                </dd>
+            </dl>
+
+
+        </div>
+
+        <!-- 为什么选择斑马车务 E-->
+
+
+
+        <!--办理流程 B-->
+        <div class="xin_liucheng clearfix">
+            <h3>服务内容及办理流程、周期</h3>
+            <p>由斑马车务提供车辆，为您提供一次上牌，一次过户服务，全程无需到场，即可完成指标延期，3个工作日全搞定！</p>
+            <img src="../images/xin_liucheng.jpg" alt=""/>
+        </div>
+        <!--办理流程 E-->
+
+
+        <!-- 车务办理信息 B-->
+        <div class="carMeg">
+            <div class="xia">
+
+
+                <h4>在线下单</h4>
+
+                <dl class="zhibiao_type clearfix">
+                    <dt><b>*</b>指标类型：</dt>
+                    <dd>
+                        <dl id="tag-xinnengyuan" onclick="SelectDriveService1(1)">
+                            <dt><i class="i1"></i></dt>
+                            <dd>新能源指标</dd>
+                        </dl>
+                        <dl id="tag-qiyouche" onclick="SelectDriveService1(0)">
+                            <dt><i></i></dt>
+                            <dd>汽油车指标</dd>
+                        </dl>
+                    </dd>
+                </dl>
+
+                <dl>
+                    <dt><b>*</b>到期时间：</dt>
+                    <dd class="select_two">
+                        <select name="ddlMonth" class="ddlMonth">
+                            <option value="-1">月份</option>
+                            <option value="1">4月</option>
+                            <option value="1">5月</option>
+                        </select>
+
+                        <select name="ddlDay" class="last_select ddlDay">
+                            <option value="-1">日期</option>
+                        </select>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><b>*</b>指标人：</dt>
+                    <dd><input type="text" placeholder="请输入指标人姓名"/></dd>
+                </dl>
+                <dl>
+                <dt><b>*</b>邮寄地址：</dt>
+                <dd class="select_three">
+                <select class="ddlProvince">
+                <option value="-1">省份</option>
+                <option value="1">河北省</option>
+                <option value="2">河南省</option>
+                </select><select class="ddlCity">
+                <option value="-1">城市</option>
+                <option value="1">石家庄</option>
+                <option value="2">邯郸</option>
+                </select><select class="ddlArea last_select">
+                <option value="-1">区县</option>
+                <option value="1">磁县</option>
+                <option value="2">魏县</option>
+                </select>
+                <p><input  type="text" placeholder="请输入收件地址"/></p>
+                </dd>
+
+                </dl>
+            </div>
+
+            <div class="choice">
+                <div class="choice_car">
+                    <p><b>*</b>是否需要加急办理？</p>
+                    <dl id="tag-no-service" onclick="SelectDriveService(1)">
+                        <dt><i class="i1"></i></dt>
+                        <dd>是：1--2个工作日办理完成，加急费500元。</dd>
+                    </dl>
+                    <dl id="tag-need-service" onclick="SelectDriveService(0)">
+                        <dt><i></i></dt>
+                        <dd>否：3--5个工作日办理完成。</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="youhui">
+                <img src="../images/xin_youhui.jpg" alt="优惠券"/>
+            </div>
+
+
+            <div class="fir">
+                <img src="images/half.jpg" alt=""/>
+            </div>
+            <div class="foot didi_foot">
+                <p>延期费：<span>299.00</span></p>
+                <p>加急费：<span>299.00</span></p>
+                <p>优惠：<span>450.00</span></p>
+                <p class="last_p">合计<b>749.00</b></p>
+
+                <button  type="button"  class="submit_button" >立即办理</button>
+            </div>
+
+
+            <!-- 把原来的图片直接替换掉 或者直接替换这个模块 B-->
+            <div class="footer_banner">
+                <div class="car">
+                    <img src="images/didi_car.png" alt="汽车"/>
+                </div>
+                <div class="footer_banner_main">
+
+                    <div class="footer_content">
+                        <div class="footer_content_item">
+                            <i class="i1"></i>
+                            <ul>
+                                <li class="frist_li">所需手续</li>
+                                <li>指标人为个人：</li>
+                                <li>
+                                    <p>小客车指标确认书2张、指标人身份证原件、指标人非京籍需提供有效期内的赞助证或居住卡原件（如不能提供，斑马车务可以辅助代办）</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_content_item">
+                            <ul>
+                                <li>如指标人为企业：</li>
+                                <li>企业需要提供三证合一之后的营业执照副本和公章，未办理三证合一的企业需提供组织机构代码证副本和公章</li>
+                            </ul>
+                        </div>
+                        <div class="didi_gongsijieshao">
+                            <div class="didi_gongsijieshao_logo">
+                                <img src="../images/bm-slogan.png" alt="斑马车务logo"/>
+                            </div>
+                            <p>
+                                <span>斑马车务</span>隶属于车网天下（北京）信息技术有限公司，是一站式车务O2O服务平台！斑马车务全面服务于个人车主、4S店、二手车商、租车公司及各类用车单位，提供新车上牌、车辆过户、年检验车、证件补办等业务的标准化服务，让车务办理更简单、更透明、更快捷，免去您来回奔波之苦，避免黑中介的灰色收费。创始团队来自易车网、汽车之家等知名互联网公司，公司全体员工以“专业、合作、创新”的服务理念，正在努力使斑马车务成长为国内最具影响力、公信度的车务办理平台。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 把原来的图片直接替换掉 或者直接替换这个模块 E-->
+        </div>
+        <div class="cover">
+            <div class="fenxiang"></div>
+        </div>
+
+
+        <div class="tanchuang">
+            <div class="tanchuang_box clearfix">
+                <span></span>
+                <img src="../images/xin_youhui_main.png" alt="领取优惠"/>
+                <div class="tanchuang_button clearfix">
+                    <a href="###">
+                        <img class="youhui_button" src="../images/youhui_button.png" alt="确定"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</form>
+
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/cityTransfer.js"></script>
+<script src="js/address.js"></script>
+<script src="js/day.js"></script>
+
+<script>
+
+    $(".choice_car dl .i1").addClass("choiced");
+    function SelectDriveService(type) {
+        if (type == 0) {
+            $("#tag-no-service").find("i").removeClass("choiced");
+            $("#tag-need-service").find("i").addClass("choiced");
+        }
+        else {
+            $("#tag-need-service").find("i").removeClass("choiced");
+            $("#tag-no-service").find("i").addClass("choiced");
+        }
+    }
+
+
+    $(".zhibiao_type dl .i1").addClass("choiced");
+    function SelectDriveService1(type) {
+        if (type == 0) {
+            $("#tag-xinnengyuan").find("i").removeClass("choiced");
+            $("#tag-qiyouche").find("i").addClass("choiced");
+        }
+        else {
+            $("#tag-qiyouche").find("i").removeClass("choiced");
+            $("#tag-xinnengyuan").find("i").addClass("choiced");
+        }
+    }
+
+</script>
+</body>
+</html>

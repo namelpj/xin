@@ -1,0 +1,400 @@
+@charset "utf-8";
+
+.br {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix {
+  clear: both;
+}
+.clearfix:after {
+  content: "　";
+  display: block;
+  overflow: hidden;
+  height: 0;
+  clear: both;
+}
+.clearfix:before {
+  content: "　";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.jiezi {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cube {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  /* Other transform properties here */
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+}
+
+.ui-bar-a,
+.ui-page-theme-a .ui-bar-inherit,
+html .ui-bar-a .ui-bar-inherit,
+html .ui-body-a .ui-bar-inherit,
+html body .ui-group-theme-a .ui-bar-inherit {
+  border-color: rgba(36, 54, 89, 0.2);
+}
+
+body {
+  min-height: 100% !important;
+  background: #fff;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+html,
+body,
+button,
+input,
+select,
+textarea {
+  font-size: 62.5%;
+  outline: none;
+}
+body {
+  font-family: "Helvetica", sans-self;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+th,
+td,
+p,
+blockquote,
+pre,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+hr {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+input ,select{
+  vertical-align: middle;
+}
+
+
+
+
+em {
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+a img {
+  border: none;
+}
+textarea:-moz-placeholder,
+input:-moz-placeholder,
+textarea:placeholder,
+input:placeholder {
+  color: #8f9bb3;
+}
+::-webkit-input-placeholder {
+  color: #8f9bb3;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.mt20{
+  margin-top: 20px;
+}
+.ui-content {
+  padding: 0;
+}
+.ui-header .ui-title,
+.ui-footer .ui-title {
+  margin: 0 20% 0 26%;
+}
+.nobd {
+  border: 0 !important;
+}
+.nobdt {
+  border-top: 0 !important;
+}
+.fz13 {
+  font-size: 1.3rem !important;
+}
+
+.line {
+  clear: both;
+  height: 16px;
+  background: #f2f4f7;
+  border-top: 1px solid #e1e6f0;
+  border-bottom: 1px solid #e1e6f0;
+}
+.line:after {
+  content: "　";
+  display: block;
+  overflow: hidden;
+  height: 0;
+  clear: both;
+}
+.line:before {
+  content: "　";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.title {
+  height: 24px;
+  border-top: 1px solid #e1e6f0;
+  background: #f2f4f7;
+}
+.main-title {
+  font-size: 1.6rem;
+  padding-left: 16px;
+  line-height: 44px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+div[data-role="content"] {
+  clear: both;
+}
+div[data-role="content"]:after {
+  content: "　";
+  display: block;
+  overflow: hidden;
+  height: 0;
+  clear: both;
+}
+div[data-role="content"]:before {
+  content: "　";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+
+
+
+/* 头和尾 */
+.header {
+  height: 49px;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  -webkit-background-size: 100% 49px;
+  background-size:  100% 49px;
+  padding-top: 5px;
+  text-align: center;
+  -webkit-box-shadow:0 0 8px #888;
+}
+
+.header a {
+  position: absolute;
+  color: #d43b3d;
+  font-size: 1.4rem;
+}
+.header h1 {
+  line-height: 49px;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #1f3e5d;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline;
+  background: #fff;
+  padding: 0 15px;
+}
+.header h1 i{
+  display: inline-block;
+  background: url(../images/logo.png) left center no-repeat #fff;
+  -webkit-background-size: 30px 28px;
+  background-size: 30px 28px;
+  width: 30px;
+  height: 28px;
+}
+
+
+/*reset end*/
+body{
+  font-family: "Microsoft YaHei";
+}
+.flr{
+  float: right;
+}
+.fll{
+  float: left;
+}
+.header ~ .container {
+  padding-top: 45px;
+}
+.footer-index ~ .container {
+  padding-bottom: 60px;
+}
+.fixed-bot ~ .container{
+  padding-bottom: 49px;
+}
+.fixed-bot-person ~ .container{
+  padding-bottom: 79px;
+}
+.btn-bot-gc ~ .container{
+  padding-bottom: 79px;
+}
+.footer-channel ~ .container{
+  padding-bottom: 50px;
+}
+.container{
+  background: #fff;
+  width: 100%;
+}
+.zm{
+  position: fixed;
+  right: 26px;
+  top: 80px;
+}
+.zm ul li{
+  line-height: 16px;
+}
+.zm ul li a{
+  font-size: 1.4rem;
+  color: #1f3e5d;
+}
+
+a.city{
+  height: 44px;
+  line-height: 44px;
+  display: inline-block;
+  color: #1f3e5d !important;
+  text-decoration: none;
+  top: 5px;
+  left: 0;
+  padding-left: 16px;
+  font-size: 1.4rem !important;
+}
+a.city i{
+  display: inline-block;
+  background: url(../images/jt-down.png) center center no-repeat;
+  -webkit-background-size: 20px 20px;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.standard{
+  margin-top: 10px;
+}
+.footer-index {
+  display: table;
+  height: 50px;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 5px;
+  z-index: 999;
+  border-top: 1px solid #E3E5E4;
+}
+.foot_submit{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+}
+
+@media screen and (min-width: 588px) {
+  .gotop {
+    right: 50%;
+    margin-right: -314px;
+  }
+}
+
+@media screen and (min-width: 541px){
+  body {
+    width: 540px;
+    margin: 0 auto !important;
+  }
+  .header{
+    -webkit-background-size: 100% 49px;
+    background-size:  100% 49px;
+    width: 540px;
+    height: 49px;
+  }
+  .footer-index{
+    width: 540px;
+    bottom: 0;
+    left: 50%!important;
+    margin-left: -270px!important;
+  }
+  .header-index{
+    background: #fff;
+    width: 540px;
+    height: 49px;
+  }
+  .fixed-bot{
+    width: 540px;
+    margin: 0 auto !important;
+  }
+  .fixed-bot-person{
+    width: 540px;
+    margin: 0 auto !important;
+    bottom: 0;
+    left: 50%;
+    margin-left: -270px!important;
+  }
+  .bm-tips-page{
+    width: 540px;
+    bottom: 0;
+    left: 50%!important;
+    margin-left: -270px!important;
+  }
+  .foot_submit{
+    width: 540px;
+    bottom: 0;
+    left: 50%!important;
+    margin-left: -270px!important;
+  }
+}
